@@ -123,6 +123,10 @@ contains(names, 'Colt', function(result){
 */
 
 //Code Here
+function uniq (array, fn){
+  let setUp = new Set(array);
+  return fn([...setUp]);
+}
 
 // Do not edit the code below.
 uniq(names, function(uniqArr){
@@ -140,6 +144,11 @@ uniq(names, function(uniqArr){
 */
 
 //Code Here 
+function each(names, fn){
+  for (let i = 0; i < names.length; i++){
+    fn(names[i], i);
+  }
+}
 
 // Do not edit the code below.
 each(names, function(item, indice){
@@ -157,6 +166,13 @@ each(names, function(item, indice){
 */
 
 // Code here
+function getUserById(users, id, fn){
+  for (let i = 0; i < users.length; i++){
+    if (users[i].id === id){
+      fn(users[i])
+    }
+  }
+}
 
 // Do not edit the code below.
 var users = [
