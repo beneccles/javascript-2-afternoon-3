@@ -28,6 +28,7 @@
 */
 
 // Code Here 
+function first(array, fun);
 
 // Do not edit the code below.
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
